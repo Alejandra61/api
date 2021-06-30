@@ -1,6 +1,13 @@
-.btn{
-    padding: 0 50px !important; 
+.m-c{
+    margin-top: 150px;
 }
-.m{
-    margin: 150px;
+.gif{
+    width: 100%;
+    height: 350px;
+}
+div .col-lg-4{
+    padding: 20px;
+}
+.btn{
+    margin-top: 50px;
 }
