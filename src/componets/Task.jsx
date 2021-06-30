@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 const Task = () => {
-  //aca se pasan los datos a los estados
+
   const [gif, setGif] = useState([]);
-  //const [visible, setVisible] = useState(false);
-  const [count, setCount] = useState(0);
+  //const [loading, setLoading] = useState(false);
 
   //aca se va a ejecutar una accion
   useEffect(() => {
@@ -17,19 +16,7 @@ const Task = () => {
         //console.log(data);
         setGif(data.data);
       });
-    /* .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            setGif(data)
-        })
-        const headers = new Headers()
-        headers.append('Content-Type', 'application/json')
-        const myInit = {
-            method: 'GET',
-            headers: headers,
-            mode: 'cors',
-            cache: 'default'
-        } */
+    
   }, []);
   console.log(gif);
 
@@ -44,7 +31,7 @@ const Task = () => {
     <>
       <div className="container position-relative m">     
         <div className="d-grid gap-2 d-md-block position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill">
-          <button className="btn btn-primary" type="button" /* onClick={gifData} */ onClick={() => setCount(gifData + 1)}>
+          <button className="btn btn-primary" type="button"  onClick={gifData}  /* onClick={() => setCount(gifData + 1)} */>
             clik
           </button>
         </div>
