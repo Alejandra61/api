@@ -1,7 +1,7 @@
 import './App.css';
-//import Tasktwo from './componets/Tasktwo';
-import Task from './componets/Task';
-import './componets/task.css'
+import Task from './app/Task';
+import './app/task.css';
+import './app/giphy.js';
 
 function App() {
   return (
